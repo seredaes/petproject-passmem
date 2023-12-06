@@ -1,0 +1,2 @@
+"use strict";(self["webpackChunkfrontent_spa"]=self["webpackChunkfrontent_spa"]||[]).push([[595],{1973:function(n,t,a){a.r(t),a.d(t,{default:function(){return l}});var e=a(3396);const r={class:"about"},s=(0,e._)("h1",null,"This is an about page",-1),u=[s];function c(n,t){return(0,e.wg)(),(0,e.iD)("div",r,u)}var o=a(89);const f={},i=(0,o.Z)(f,[["render",c]]);var l=i}}]);
+//# sourceMappingURL=AboutController.8c2ece28.js.map

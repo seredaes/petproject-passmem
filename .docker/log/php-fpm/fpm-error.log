@@ -1,0 +1,80 @@
+[10-Oct-2023 19:48:49] NOTICE: fpm is running, pid 1
+[10-Oct-2023 19:48:49] NOTICE: ready to handle connections
+[10-Oct-2023 19:51:23] NOTICE: Finishing ...
+[10-Oct-2023 19:51:23] NOTICE: exiting, bye-bye!
+[11-Oct-2023 06:16:56] NOTICE: fpm is running, pid 1
+[11-Oct-2023 06:16:56] NOTICE: ready to handle connections
+[11-Oct-2023 20:19:46] NOTICE: Finishing ...
+[11-Oct-2023 20:19:46] NOTICE: exiting, bye-bye!
+[12-Oct-2023 17:34:44] NOTICE: fpm is running, pid 1
+[12-Oct-2023 17:34:44] NOTICE: ready to handle connections
+[12-Oct-2023 17:47:49] NOTICE: Finishing ...
+[12-Oct-2023 17:47:49] NOTICE: exiting, bye-bye!
+[26-Nov-2023 15:06:33] NOTICE: fpm is running, pid 1
+[26-Nov-2023 15:06:33] NOTICE: ready to handle connections
+[26-Nov-2023 21:01:09] NOTICE: Finishing ...
+[26-Nov-2023 21:01:09] NOTICE: exiting, bye-bye!
+[27-Nov-2023 08:55:28] NOTICE: fpm is running, pid 1
+[27-Nov-2023 08:55:28] NOTICE: ready to handle connections
+[27-Nov-2023 08:55:41] NOTICE: Finishing ...
+[27-Nov-2023 08:55:41] NOTICE: exiting, bye-bye!
+[27-Nov-2023 09:06:00] NOTICE: fpm is running, pid 1
+[27-Nov-2023 09:06:00] NOTICE: ready to handle connections
+[27-Nov-2023 09:11:23] NOTICE: Finishing ...
+[27-Nov-2023 09:11:23] NOTICE: exiting, bye-bye!
+[27-Nov-2023 09:11:45] NOTICE: fpm is running, pid 1
+[27-Nov-2023 09:11:45] NOTICE: ready to handle connections
+[27-Nov-2023 09:13:44] NOTICE: Finishing ...
+[27-Nov-2023 09:13:44] NOTICE: exiting, bye-bye!
+[27-Nov-2023 09:13:49] NOTICE: fpm is running, pid 1
+[27-Nov-2023 09:13:49] NOTICE: ready to handle connections
+[27-Nov-2023 09:15:21] NOTICE: Finishing ...
+[27-Nov-2023 09:15:21] NOTICE: exiting, bye-bye!
+[27-Nov-2023 09:15:27] NOTICE: fpm is running, pid 1
+[27-Nov-2023 09:15:27] NOTICE: ready to handle connections
+[27-Nov-2023 09:16:01] NOTICE: Finishing ...
+[27-Nov-2023 09:16:01] NOTICE: exiting, bye-bye!
+[27-Nov-2023 09:16:07] NOTICE: fpm is running, pid 1
+[27-Nov-2023 09:16:07] NOTICE: ready to handle connections
+[27-Nov-2023 09:24:00] NOTICE: Finishing ...
+[27-Nov-2023 09:24:00] NOTICE: exiting, bye-bye!
+[27-Nov-2023 09:24:07] NOTICE: fpm is running, pid 1
+[27-Nov-2023 09:24:07] NOTICE: ready to handle connections
+[27-Nov-2023 09:25:58] NOTICE: Finishing ...
+[27-Nov-2023 09:25:58] NOTICE: exiting, bye-bye!
+[27-Nov-2023 09:30:17] NOTICE: fpm is running, pid 1
+[27-Nov-2023 09:30:17] NOTICE: ready to handle connections
+[27-Nov-2023 09:34:58] NOTICE: Finishing ...
+[27-Nov-2023 09:34:58] NOTICE: exiting, bye-bye!
+[27-Nov-2023 09:35:07] NOTICE: fpm is running, pid 1
+[27-Nov-2023 09:35:07] NOTICE: ready to handle connections
+[27-Nov-2023 09:44:33] NOTICE: Finishing ...
+[27-Nov-2023 09:44:33] NOTICE: exiting, bye-bye!
+[27-Nov-2023 09:48:26] NOTICE: fpm is running, pid 1
+[27-Nov-2023 09:48:26] NOTICE: ready to handle connections
+[27-Nov-2023 09:52:13] NOTICE: Finishing ...
+[27-Nov-2023 09:52:13] NOTICE: exiting, bye-bye!
+[27-Nov-2023 09:52:18] NOTICE: fpm is running, pid 1
+[27-Nov-2023 09:52:18] NOTICE: ready to handle connections
+[27-Nov-2023 09:52:21] NOTICE: Finishing ...
+[27-Nov-2023 09:52:21] NOTICE: exiting, bye-bye!
+[27-Nov-2023 10:03:13] NOTICE: fpm is running, pid 1
+[27-Nov-2023 10:03:13] NOTICE: ready to handle connections
+[27-Nov-2023 10:11:45] NOTICE: Finishing ...
+[27-Nov-2023 10:11:45] NOTICE: exiting, bye-bye!
+[27-Nov-2023 10:16:54] NOTICE: fpm is running, pid 1
+[27-Nov-2023 10:16:54] NOTICE: ready to handle connections
+[27-Nov-2023 10:16:54] WARNING: [pool www] child 7 said into stdout: "<br />"
+[27-Nov-2023 10:16:54] WARNING: [pool www] child 7 said into stdout: "<b>Warning</b>:  Unknown: Invalid date.timezone value 'Europa/Amsterdam', using 'Europe/London' instead in <b>Unknown</b> on line <b>0</b><br />"
+[27-Nov-2023 10:16:54] WARNING: [pool www] child 8 said into stdout: "<br />"
+[27-Nov-2023 10:16:54] WARNING: [pool www] child 8 said into stdout: "<b>Warning</b>:  Unknown: Invalid date.timezone value 'Europa/Amsterdam', using 'Europe/London' instead in <b>Unknown</b> on line <b>0</b><br />"
+[27-Nov-2023 10:19:01] NOTICE: Finishing ...
+[27-Nov-2023 10:19:01] NOTICE: exiting, bye-bye!
+[27-Nov-2023 10:48:34] NOTICE: fpm is running, pid 1
+[27-Nov-2023 10:48:34] NOTICE: ready to handle connections
+[27-Nov-2023 10:49:15] NOTICE: Finishing ...
+[27-Nov-2023 10:49:15] NOTICE: exiting, bye-bye!
+[27-Nov-2023 10:49:59] NOTICE: fpm is running, pid 1
+[27-Nov-2023 10:49:59] NOTICE: ready to handle connections
+[27-Nov-2023 10:52:05] NOTICE: Finishing ...
+[27-Nov-2023 10:52:05] NOTICE: exiting, bye-bye!

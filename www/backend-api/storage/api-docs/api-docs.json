@@ -1,0 +1,312 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "PASSMEM API Documentation",
+        "description": "Check for details",
+        "contact": {
+            "email": "admin@admin.com"
+        },
+        "license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        },
+        "version": "1.0.0"
+    },
+    "servers": [
+        {
+            "url": "http://passmem.local",
+            "description": "Demo API Server"
+        }
+    ],
+    "paths": {
+        "/api/auth": {
+            "post": {
+                "tags": [
+                    "Auth"
+                ],
+                "summary": "Make auth in project",
+                "description": "Return token if auth is correct",
+                "operationId": "makeAuth",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    }
+                }
+            }
+        },
+        "/api/registration": {
+            "post": {
+                "tags": [
+                    "Auth"
+                ],
+                "summary": "Make registration in project",
+                "description": "# Регистрация пользователя",
+                "operationId": "makeRegistration",
+                "requestBody": {
+                    "description": "Пароль от **8** до **16** символов. ",
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "required": [
+                                    "email",
+                                    "password",
+                                    "name",
+                                    "password_confirmation"
+                                ],
+                                "properties": {
+                                    "email": {
+                                        "type": "string",
+                                        "format": "email",
+                                        "example": "user1@mail.com"
+                                    },
+                                    "name": {
+                                        "type": "string",
+                                        "format": "string",
+                                        "example": "User 1"
+                                    },
+                                    "password": {
+                                        "type": "string",
+                                        "format": "password",
+                                        "example": "PassWord12345"
+                                    },
+                                    "password_confirmation": {
+                                        "type": "string",
+                                        "format": "password",
+                                        "example": "PassWord12345"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    }
+                },
+                "security": [
+                    {
+                        "bearerAuth": []
+                    }
+                ]
+            }
+        },
+        "/api/list": {
+            "post": {
+                "tags": [
+                    "List"
+                ],
+                "summary": "Get or search list",
+                "description": "# Получить список записей пользователя",
+                "operationId": "getList",
+                "requestBody": {
+                    "description": "Поле search по умолчанию должно быть как * - все записи, или первые буквы для поиска по title",
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "required": [
+                                    "search"
+                                ],
+                                "properties": {
+                                    "search": {
+                                        "type": "string",
+                                        "format": "string",
+                                        "example": "*"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    }
+                },
+                "security": [
+                    {
+                        "bearer_token": []
+                    }
+                ]
+            }
+        },
+        "/api/list/create": {
+            "post": {
+                "tags": [
+                    "List"
+                ],
+                "summary": "Create new record in list",
+                "description": "# Создать новую запись",
+                "operationId": "setList",
+                "requestBody": {
+                    "description": "Поле description не обязательно",
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "required": [
+                                    "title",
+                                    "login",
+                                    "password"
+                                ],
+                                "properties": {
+                                    "title": {
+                                        "type": "string",
+                                        "format": "string",
+                                        "example": "google"
+                                    },
+                                    "login": {
+                                        "type": "string",
+                                        "format": "string",
+                                        "example": "user1@gmail.com"
+                                    },
+                                    "password": {
+                                        "type": "string",
+                                        "format": "string",
+                                        "example": "Aa123456#"
+                                    },
+                                    "description": {
+                                        "type": "string",
+                                        "format": "string",
+                                        "example": ""
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    }
+                },
+                "security": [
+                    {
+                        "bearer_token": []
+                    }
+                ]
+            }
+        },
+        "/api/list/update": {
+            "post": {
+                "tags": [
+                    "List"
+                ],
+                "summary": "Update record in list by ID",
+                "description": "# Изменить запись",
+                "operationId": "updateList",
+                "requestBody": {
+                    "description": "Поле description не обязательно",
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "required": [
+                                    "title",
+                                    "login",
+                                    "password",
+                                    "id"
+                                ],
+                                "properties": {
+                                    "title": {
+                                        "type": "string",
+                                        "format": "string",
+                                        "example": "google"
+                                    },
+                                    "login": {
+                                        "type": "string",
+                                        "format": "string",
+                                        "example": "user1@gmail.com"
+                                    },
+                                    "password": {
+                                        "type": "string",
+                                        "format": "string",
+                                        "example": "Aa123456#"
+                                    },
+                                    "description": {
+                                        "type": "string",
+                                        "format": "string",
+                                        "example": ""
+                                    },
+                                    "id": {
+                                        "type": "string",
+                                        "format": "string",
+                                        "example": "9ab8717c-c16c-4c22-8951-a44d531b0efb"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    }
+                },
+                "security": [
+                    {
+                        "bearer_token": []
+                    }
+                ]
+            }
+        },
+        "/api/list/delete": {
+            "post": {
+                "tags": [
+                    "List"
+                ],
+                "summary": "Delete record in list by ID",
+                "description": "# Удалить запись",
+                "operationId": "deleteList",
+                "requestBody": {
+                    "description": "Поле description не обязательно",
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "required": [
+                                    "id"
+                                ],
+                                "properties": {
+                                    "id": {
+                                        "type": "string",
+                                        "format": "string",
+                                        "example": "9ab8717c-c16c-4c22-8951-a44d531b0efb"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    }
+                },
+                "security": [
+                    {
+                        "bearer_token": []
+                    }
+                ]
+            }
+        }
+    },
+    "tags": [
+        {
+            "name": "PasswordMemory API",
+            "description": "API Endpoints of Project"
+        }
+    ],
+    "components": {
+        "securitySchemes": {
+            "bearer_token": {
+                "type": "apiKey",
+                "description": "Enter token in format (Bearer <token>)",
+                "name": "Authorization",
+                "in": "header"
+            }
+        }
+    }
+}

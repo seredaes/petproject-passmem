@@ -1,0 +1,2 @@
+"use strict";(self["webpackChunkfrontent_spa"]=self["webpackChunkfrontent_spa"]||[]).push([[737],{9850:function(n,e,t){t.r(e),t.d(e,{default:function(){return f}});var r=t(3396);const a={class:"error-block"};function o(n,e,t,o,s,c){return(0,r.wg)(),(0,r.iD)("div",a,"404 - page not found")}var s=(0,r.aZ)({name:"HomeView",components:{}}),c=t(89);const u=(0,c.Z)(s,[["render",o],["__scopeId","data-v-887fa716"]]);var f=u}}]);
+//# sourceMappingURL=NotFoundController.e34944cf.js.map
